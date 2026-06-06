@@ -1,6 +1,6 @@
 import random 
 import time
-print("⚡ ДОТА-ТРЕНАЖЁР: МАТЧ ИЗ 3 ПОПЫТОК ⚡ НАЖИМАЙ НА ENTER КАК МОЖНО БЫСТРЕЕ!")
+print(" ДОТА-ТРЕНАЖЁР: МАТЧ ИЗ 3 ПОПЫТОК  НАЖИМАЙ НА ENTER КАК МОЖНО БЫСТРЕЕ!")
 print("Пройди все 3 раунда и узнаешь свой средний результат!")
 print("-" * 40)
 total = 0
@@ -9,11 +9,11 @@ for round in range(1,4):
     print("ПРИГОТОВИЛИСЬ....")
     w  = random.uniform(2,4)
     time.sleep(w)
-    commands = ["ХУКАЙ! 🎯", "ПРОЖИМАЙ BKB! 🛡️", "КАСТУЙ САНСТРАЙК! ☀️"]
+    commands = ["ХУКАЙ! ", "ПРОЖИМАЙ BKB! ", "КАСТУЙ САНСТРАЙК! "]
     random.choice(commands)
     start = time.time()
     current_command = random.choice(commands)
-    input(f"\n🔥 {current_command} 🔥")
+    input(f"\n {current_command} ")
     end = time.time()
     reaction_s = end - start
     reaction  = int(reaction_s * 1000)
